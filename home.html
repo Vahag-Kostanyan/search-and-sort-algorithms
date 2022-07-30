@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+    <script src="https://kit.fontawesome.com/628a4790ee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-navbar">
+            <img src="./imgs/ss-logo.png" alt="">
+            <a href="./word-sorting/wordSorting.html" class="wordSorting">word sorting</a>
+        </div>
+        <div class="wrapper-heder">
+            <div class="wrapper-heder-text">
+                <h1 class="wrapper-title">Search and sort algorithms</h1>
+                <p>Hi! Here you can get acquainted with 10 search and sorting methods, use
+                    them to see the execution time and get acquainted with their codes.</p>
+                <div class="wrapper-heder-text-buttons">
+                    <a href="#sort">algoritms for sorting</a>
+                    <a href="#search">algoritms for searching</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-buttons">
+            <div class="wrapper-buttons-sort">
+                <h1 id="sort">Methodist for sorting</h1>
+                <ul>
+                    <a>
+                        <li>Selection Sort</li>
+                    </a>
+                    <div>
+                        <button class="imgBtn s-img">see program</button>
+                        <button class="try-sort-btn s-try">try program</button>
+                    </div>
+
+                    <nev class="modal-done s-img">
+                        <img src="./imgs/sort-s.PNG" alt="">
+                    </nev>
+
+                    <nav class="modal-done-try">
+                        <div class="x-icon">
+                            <button><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="modal-done-try-content">
+                            <div>
+                                <p>execution period &#10230;</p>
+                                <p class="sort-time"></p>
+                            </div>
+                            <div>
+                                <p>array elements &#8595;</p>
+                                <p class="sort-arr-elements"></p>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <a>
+                        <li>Recursive Bubble Sort </li>
+                    </a>
+                    <div>
+                        <button class="imgBtn rb-img">see program</button>
+                        <button class="try-sort-btn rb-try">try program</button>
+                    </div>
+
+                    <nav class="modal-done rb-img">
+                        <img src="./imgs/sort-rb.PNG" alt="">
+                    </nav>
+
+                    <a>
+                        <li>Recursive Insertion Sort</li>
+                    </a>
+                    <div>
+                        <button class="imgBtn ri-img">see program</button>
+                        <button class="try-sort-btn ri-try">try program</button>
+                    </div>
+
+                    <nav class="modal-done ri-img">
+                        <img src="./imgs/sort-ri.PNG" alt="">
+                    </nav>
+
+                    <a>
+                        <li>Iterative Merge Sort</li>
+                    </a>
+                    <div>
+                        <button class="imgBtn im-img">see program</button>
+                        <button class="try-sort-btn im-try">try program</button>
+                    </div>
+
+                    <nav class="modal-done im-img">
+                        <img src="./imgs/marg-im1.PNG" alt="">
+                        <img src="./imgs/marg-im2.PNG" alt="">
+                    </nav>
+
+
+                    <a>
+                        <li>Quick Sort</li>
+                    </a>
+                    <div>
+                        <button class="imgBtn q-img">see program</button>
+                        <button class="try-sort-btn q-try">try program</button>
+                    </div>
+
+                    <nav class="modal-done q-img">
+                        <img src="./imgs/sort-q.png" alt="">
+                    </nav>
+
+                </ul>
+            </div>
+
+            <!---->
+
+            <div class="wrapper-buttons-search">
+                <h1 id="search">Methodist for sorting</h1>
+                <ul>
+                    <a>
+                        <li>Linear Search</li>
+                    </a>
+                    <div>
+                        <button class="imgBtn l-img">see program</button>
+                        <button class="try-search-Btn l-try">try program</button>
+                    </div>
+
+                    <nav class="modal-done l-img">
+                        <img src="./imgs/search-l.png" alt="">
+                    </nav>
+
+                    <nav class="modal-search-done">
+                        <div class="search-x-icon">
+                            <button><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="modal-search-done-content">
+                            <div>
+                                <p>execution period &#10230;</p>
+                                <p class="search-time"></p>
+                            </div>
+                            <div class="modal-search-done-content-last-side">
+                                <div class="modal-search-done-content-last-side-block1">
+                                    <p>array elements &#8595;</p>
+                                    <div class="form-block">
+                                        <form class="form">
+                                            <input type="text" placeholder="search" name="searchInput"
+                                                class="searchInput" autocomplete="off">
+                                            <button class="searchBtn" disabled>search</button>
+                                        </form>
+                                        <button class="last-arr" disabled>see array</button>
+                                    </div>
+                                </div>
+                                <p class="search-arr-element"></p>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <a>
+                        <li>Jump Search</li>
+                    </a>
+                    <p class="j-text">Jump search only works with sorted arays.</p>
+                    <div>
+                        <button class="imgBtn j-img">see program</button>
+                        <button class="try-search-Btn j-try">try program</button>
+                    </div>
+
+                    <nav class="modal-done j-img">
+                        <img src="./imgs/search-j.png" alt="">
+                    </nav>
+
+                    <a>
+                        <li>Exponential Search</li>
+                    </a>
+                    <p class="j-text">Exponential search only works with sorted arays.</p>
+
+                    <div>
+                        <button class="imgBtn e-img">see program</button>
+                        <button class="try-search-Btn e-try">try program</button>
+                    </div>
+
+                    <nav class="modal-done e-img">
+                        <img src="./imgs/search-e.png" alt="">
+                    </nav>
+
+                    <a>
+                        <li>Fibonacci Search</li>
+                    </a>
+                    <p class="j-text">Fibonacci search only works with sorted arays.</p>
+                    <div>
+                        <button class="imgBtn f-img">see program</button>
+                        <button class="try-search-Btn f-try">try program</button>
+                    </div>
+
+                    <nav class="modal-done f-img">
+                        <img src="./imgs/search-f.png" alt="">
+                    </nav>
+
+                    <a>
+                        <li>Recursive program to linearly search an element in a given array</li>
+                    </a>
+                    <div>
+                        <button class="imgBtn rpls-img">see program</button>
+                        <button class="try-search-Btn rpls-try">try program</button>
+                    </div>
+
+                    <nav class="modal-done rpls-img">
+                        <img src="./imgs/search-rpls.png" alt="">
+                    </nav>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper-footer">
+            <span>You can see more <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">Geeksfor
+                    Geeeks</a></span>
+        </div>
+    </div>
+
+    <script src="./sort.js"></script>
+    <script src="./search.js"></script>
+</body>
+
+</html>
